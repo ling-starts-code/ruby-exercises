@@ -25,12 +25,12 @@ def increment_greatest_value(nested_array)
   greatest_value = nested_array.flatten.min
   nested_array.each do |array|
     array.each do |current_value|
-      if greatest_value < 1
+      if greatest_value < current_value
         greatest_value = current_value
       end
     end
   end
-  greatest_value += 4
+  greatest_value += 1
 end
 
 # This next exercise might look familiar
